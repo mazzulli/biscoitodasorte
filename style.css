@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, #190361 0%, #B0F);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%; 
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    background-color: #fff;
+    width: min(42.8rem, 90%);
+    height: 42.4rem;
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    text-align: center;
+    margin-top: -12rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;    
+}
+
+h1 {    
+    margin-bottom: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h1, p {
+    color: #34355B;
+}
+
+img {
+    margin-top: 2rem;
+}
+
+img:hover {
+    transform: scale(1);
+    animation: tremere 0.5s infinite;
+    cursor: pointer;
+}
+
+button {
+    background: #FF9500;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    width: 17.4rem;
+    height: 5.2rem;
+    border-radius: .5rem;
+    margin-top: 6rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e88802 ;
+}
+
+.screen2 {
+    background-color: #fff;
+    height: 50.4rem;    
+    align-items: center;    
+    border-radius: .5rem;
+}
+
+.screen2 p {    
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+    width: 29.3rem;
+    height: 10.7rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    margin-top: 1.7rem;
+}
+
+.screen2 h1 {
+    width: 29.7rem;
+}
+
+.resize {
+    height: 56rem;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.hide-msg1 {
+    display: none;
+}
+
+.hide-msg2 {
+    display: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes tremere {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, 2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+        }
+        50% {
+        transform: translateY(-20px);
+        opacity: .5;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
